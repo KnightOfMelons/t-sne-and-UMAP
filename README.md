@@ -9,3 +9,7 @@ pip install pandas matplotlib scikit-learn
 pip install tqdm
 
 pip install umap-learn
+
+pip install trimap
+
+pip install pacmap

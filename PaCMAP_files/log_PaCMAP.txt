@@ -1,0 +1,62 @@
+Преобразуем данные в массив NumPy
+Применение PaCMAP для снижения размерности до 2D
+C:\Users\golde\AppData\Local\Programs\Python\Python312\Lib\site-packages\pacmap\pacmap.py:822: UserWarning: Warning: random state is set to 42
+  warnings.warn(f'Warning: random state is set to {_RANDOM_STATE}')
+Применяем PaCMAP
+X is normalized
+PaCMAP(n_neighbors=10, n_MN=5, n_FP=20, distance=euclidean, lr=1.0, n_iters=(100, 100, 250), apply_pca=True, opt_method='adam', verbose=True, intermediate=False, seed=42)
+Finding pairs
+Found nearest neighbor
+Calculated sigma
+Found scaled dist
+Pairs sampled successfully.
+((399990, 2), (199995, 2), (799980, 2))
+Initial Loss: 492876.0
+Iteration:   10, Loss: 305670.000000
+Iteration:   20, Loss: 281161.437500
+Iteration:   30, Loss: 266864.562500
+Iteration:   40, Loss: 254612.312500
+Iteration:   50, Loss: 242114.843750
+Iteration:   60, Loss: 228360.218750
+Iteration:   70, Loss: 212418.375000
+Iteration:   80, Loss: 192887.531250
+Iteration:   90, Loss: 166516.656250
+Iteration:  100, Loss: 121702.968750
+Iteration:  110, Loss: 140158.437500
+Iteration:  120, Loss: 135332.656250
+Iteration:  130, Loss: 133764.687500
+Iteration:  140, Loss: 133097.640625
+Iteration:  150, Loss: 132757.000000
+Iteration:  160, Loss: 132550.984375
+Iteration:  170, Loss: 132411.218750
+Iteration:  180, Loss: 132312.281250
+Iteration:  190, Loss: 132249.750000
+Iteration:  200, Loss: 132200.796875
+Iteration:  210, Loss: 49617.031250
+Iteration:  220, Loss: 48632.917969
+Iteration:  230, Loss: 47833.613281
+Iteration:  240, Loss: 47210.140625
+Iteration:  250, Loss: 46722.234375
+Iteration:  260, Loss: 46331.843750
+Iteration:  270, Loss: 46010.820312
+Iteration:  280, Loss: 45740.132812
+Iteration:  290, Loss: 45507.070312
+Iteration:  300, Loss: 45302.886719
+Iteration:  310, Loss: 45122.367188
+Iteration:  320, Loss: 44961.109375
+Iteration:  330, Loss: 44814.519531
+Iteration:  340, Loss: 44678.949219
+Iteration:  350, Loss: 44553.929688
+Iteration:  360, Loss: 44439.648438
+Iteration:  370, Loss: 44335.453125
+Iteration:  380, Loss: 44238.609375
+Iteration:  390, Loss: 44147.406250
+Iteration:  400, Loss: 44062.148438
+Iteration:  410, Loss: 43981.300781
+Iteration:  420, Loss: 43905.535156
+Iteration:  430, Loss: 43834.812500
+Iteration:  440, Loss: 43768.773438
+Iteration:  450, Loss: 43706.941406
+Elapsed time: 8.51s
+Визуализация результатов
+Отрисовка всех точек
