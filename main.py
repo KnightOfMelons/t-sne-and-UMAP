@@ -7,34 +7,7 @@ from mammoth_data import data  # Импортируем список из фай
 from quick_test import test_data
 from tqdm import tqdm  # Импортируем библиотеку для прогресс-бара
 from umap import UMAP
-
-
-# Я пытался скачать trimap (pip install trimap), но она требует Build Tools для С++, но сколько бы не устанавливал - всё равно не работает.
-# Вроде этот код эмулирует алгоритм (нашел в интернете)
-def manual_trimap(data, n_neighbors=5, n_components=2, n_iter=500):
-    # Получение ближайших соседей
-    nbrs = NearestNeighbors(n_neighbors=n_neighbors).fit(data)
-    distances, indices = nbrs.kneighbors(data)
-
-    # Инициализация 2D координат случайными значениями
-    embedding = np.random.rand(data.shape[0], n_components)
-
-    # Основной цикл оптимизации
-    for _ in range(n_iter):
-        for i in range(data.shape[0]):
-            # Соседи текущей точки
-            neighbors = indices[i][1:]  # исключаем саму точку
-
-            for j in neighbors:
-                # Обновление координат на основе расстояний
-                diff = embedding[i] - embedding[j]
-                dist = np.linalg.norm(diff)
-
-                if dist > 0:
-                    # Корректируем координаты
-                    embedding[i] -= (diff / dist) * (dist - distances[i][1])  # используем distances[i][1]
-
-    return embedding
+from trimap import TRIMAP
 
 
 while True:
@@ -90,10 +63,13 @@ while True:
 
     elif choose == 3:
         print("Преобразуем данные в массив NumPy")
-        data_array = np.array(test_data)
+        data_array = np.array(data)
 
-        print("Применение TriMap (реализованного вручную) для снижения размерности до 2D")
-        data_2d = manual_trimap(data_array)
+        # Инициализируем модель TriMap без параметров
+        trimap_model = TRIMAP()
+
+        print("Применяем TriMap")
+        data_2d = trimap_model.fit_transform(data_array)  # Попробуем без дополнительных параметров
 
         print("Визуализация результатов")
         plt.figure(figsize=(10, 8))
@@ -101,12 +77,12 @@ while True:
         print("Отрисовка всех точек")
         plt.scatter(data_2d[:, 0], data_2d[:, 1], s=10, c=data_2d[:, 0], cmap='viridis')
 
-        plt.title('2D Visualization of Data using Manual TriMap')
+        plt.title('2D Visualization of Data using TriMap')
         plt.xlabel('TriMap Component 1')
         plt.ylabel('TriMap Component 2')
         plt.grid(True)
         plt.show()
-            
+                
     elif choose == 4:
         print("Преобразуем данные в массив NumPy")
         data_array = np.array(test_data)
