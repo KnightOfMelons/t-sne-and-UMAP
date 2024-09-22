@@ -1,18 +1,20 @@
 import matplotlib.pyplot as plt
 import pacmap
-import numpy as np  # Для работы с массивами
+import numpy as np
 from sklearn.manifold import TSNE
 from sklearn.neighbors import NearestNeighbors
-from mammoth_data import data  # Импортируем список из файла mammoth_data.py
-from quick_test import test_data
+from mammoth_data import data # Тут все данные
+from quick_test import test_data # Тут ограниченное количество данных для быстрого теста
 from tqdm import tqdm  # Импортируем библиотеку для прогресс-бара
 from umap import UMAP
 from trimap import TRIMAP
 
 
+# Основной цикл работы программы
 while True:
     choose = int(input("\n1 - Алгоритм t-sne.\n2 - Алгоритм UMAP.\n3 - Алгоритм TriMap.\n4 - Алгоритм PaCMAP.\n0 - Выход.\n\nВаш выбор: "))
 
+    # Если выбор пользователя равен 1, то будет воспроизводиться алгоритм t-sne.
     if choose == 1:
         print("Преобразуем данные в массив NumPy")
         # Я везде поставил пока test_data из quick_test.py, там находится меньше значений (где-то 40 тысяч), посему визуализирование функционала
@@ -25,6 +27,7 @@ while True:
         print("Применяем t-SNE")
         data_2d = tsne.fit_transform(data_array)
 
+        # С этого момента происходит отрисовка графика с точками
         print("Визуализация результатов")
         plt.figure(figsize=(10, 8))
 
@@ -37,10 +40,10 @@ while True:
         plt.grid(True)
         plt.show()
 
+    # Если выбор 2, то произойдёт анализ с помощью UMAP
     elif choose == 2:
         print("Преобразуем данные в массив NumPy")
-        # Я везде поставил пока test_data из quick_test.py, там находится меньше значений (где-то 40 тысяч), посему визуализирование функционала
-        # происходит быстрей, можете сменить на data, чтобы тестировать из полного списка mammoth_data.py.
+        # Тут также, как и до этого. Использую test_data, вместо data. Если хотите ждать 3 часа, то пожалуйста, можете попробовать с data
         data_array = np.array(test_data)
 
         print("Применение UMAP для снижения размерности до 2D")
@@ -49,6 +52,7 @@ while True:
         print("Применяем UMAP")
         data_2d = umap.fit_transform(data_array)
 
+        # Визуализация с matplotlib
         print("Визуализация результатов")
         plt.figure(figsize=(10, 8))
 
@@ -61,6 +65,7 @@ while True:
         plt.grid(True)
         plt.show()
 
+    # Если выбор 3, то алгоритм TriMap
     elif choose == 3:
         print("Преобразуем данные в массив NumPy")
         data_array = np.array(data)
@@ -83,6 +88,7 @@ while True:
         plt.grid(True)
         plt.show()
                 
+    # Если выбор 4, то PaCMAP
     elif choose == 4:
         print("Преобразуем данные в массив NumPy")
         data_array = np.array(test_data)
@@ -105,7 +111,10 @@ while True:
         plt.grid(True)
         plt.show()
 
+    # Если 0, то выход из программы
     elif choose == 0:
         break
+
+    # А это для особо отличившихся, кто ввел не те команды
     else:
         continue
