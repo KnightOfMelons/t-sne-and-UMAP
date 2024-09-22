@@ -1,0 +1,93 @@
+PS C:\Users\golde\OneDrive\Рабочий стол\MIREA\Интеллектульные системы и технологии\1 семестр\Практическое задание 2> & C:/Users/golde/AppData/Local/Programs/Python/Python312/python.exe "c:/Users/golde/OneDrive/Рабочий стол/MIREA/Интеллектульные системы и технологии/1 семестр/Практическое задание 2/main.py"
+
+1 - Алгоритм t-sne.
+2 - Алгоритм UMAP.
+3 - Алгоритм TriMap.
+0 - Выход.
+
+Ваш выбор: 2
+Преобразуем данные в массив NumPy
+Применение UMAP для снижения размерности до 2D
+Применяем UMAP
+Применяем UMAP
+C:\Users\golde\AppData\Local\Programs\Python\Python312\Lib\site-packages\umap\umap_.py:1945: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+
+  warn(f"n_jobs value {self.n_jobs} overridden to 1 by setting random_state. Use no seed for parallelism.")
+UMAP(n_jobs=1, random_state=42, verbose=True)
+Sun Sep 22 15:40:43 2024 Construct fuzzy simplicial set
+Sun Sep 22 15:40:43 2024 Building RP forest with 21 trees
+Sun Sep 22 15:40:46 2024 NN descent for 17 iterations
+         1  /  17
+         2  /  17
+        Stopping threshold met -- exiting after 2 iterations      
+Sun Sep 22 15:40:56 2024 Finished Nearest Neighbor Search
+Sun Sep 22 15:40:57 2024 Construct embedding
+Epochs completed:   0%|                                                          0/200 [00:00]completed  0  /  200 epochs
+Epochs completed:  10%| █████▌                                                  20/200 [00:03]completed  20  /  200 epochs
+Epochs completed:  20%| ███████████                                             40/200 [00:07]completed  40  /  200 epochs
+Epochs completed:  30%| ████████████████▌                                       60/200 [00:11]completed  60  /  200 epochs
+Epochs completed:  34%| ██████████████████▍                       Epochs completed:  34%| ██████████████████▋                       
+Epochs completed:  34%| ██████████████████▉                       
+Epochs completed:  35%| ███████████████████▎                      
+Epochs completed:  36%| ███████████████████▌                      
+Epochs completed:  36%| ███████████████████▊                      
+Epochs completed:  36%| ████████████████████                      
+Epochs completed:  37%| ████████████████████▎                     
+Epochs completed:  38%| ████████████████████▋                     
+Epochs completed:  38%| ████████████████████▉                     
+Epochs completed:  38%| █████████████████████▏                    
+Epochs completed:  39%| █████████████████████▍                    
+Epochs completed:  40%| █████████████████████▋                    
+Epochs completed:  40%| ██████████████████████                    
+              80/200 [00:15]    completed  80  /  200 epochs
+Epochs completed:  40%| ██████████████████████▎                   
+Epochs completed:  41%| ██████████████████████▌                   
+Epochs completed:  42%| ██████████████████████▊                   
+Epochs completed:  42%| ███████████████████████                   
+Epochs completed:  42%| ███████████████████████▍                  
+Epochs completed:  43%| ███████████████████████▋                  
+Epochs completed:  44%| ███████████████████████▉                  
+Epochs completed:  44%| ████████████████████████▏                 
+Epochs completed:  44%| ████████████████████████▍                 
+Epochs completed:  45%| ████████████████████████▊                 
+Epochs completed:  46%| █████████████████████████                 
+Epochs completed:  46%| █████████████████████████▎                
+Epochs completed:  46%| █████████████████████████▌                
+Epochs completed:  47%| █████████████████████████▊                
+Epochs completed:  48%| ██████████████████████████▏               
+Epochs completed:  48%| ██████████████████████████▍               
+Epochs completed:  48%| ██████████████████████████▋               
+Epochs completed:  49%| ██████████████████████████▉               
+Epochs completed:  50%| ███████████████████████████▏              
+Epochs completed:  50%| ███████████████████████████               
+             100/200 [00:18]    completed  100  /  200 epochs
+Epochs completed:  50%| ███████████████████████████▎              
+Epochs completed:  51%| ███████████████████████████▌              
+Epochs completed:  52%| ███████████████████████████▊              
+Epochs completed:  52%| ████████████████████████████              
+Epochs completed:  52%| ████████████████████████████▎             
+Epochs completed:  53%| ████████████████████████████▌             
+Epochs completed:  54%| ████████████████████████████▉             
+Epochs completed:  54%| █████████████████████████████▏            
+Epochs completed:  55%| █████████████████████████████▍            
+Epochs completed:  55%| █████████████████████████████▋            
+Epochs completed:  56%| █████████████████████████████▉            
+Epochs completed:  56%| ██████████████████████████████▏           
+Epochs completed:  56%| ██████████████████████████████▌           
+Epochs completed:  57%| ██████████████████████████████▊           
+Epochs completed:  57%| ███████████████████████████████           
+Epochs completed:  58%| ███████████████████████████████▎          
+Epochs completed:  58%| ███████████████████████████████▌          
+Epochs completed:  59%| ███████████████████████████████▊          
+Epochs completed:  60%| ████████████████████████████████▏         
+Epochs completed:  60%| ████████████████████████████████▍         
+             120/200 [00:22]    completed  120  /  200 epochs
+Epochs completed:  60%| ████████████████████████████████▋         
+Epochs completed:  61%| ████████████████████████████████▉         
+Epochs completed:  62%| █████████████████████████████████▏        Epochs completed:  62%| █████████████████████████████████▍        Epochs completed:  62%| █████████████████████████████████▊        Epochs completed:  63%| ██████████████████████████████████        Epochs completed:  64%| ██████████████████████████████████▎       Epochs completed:  64%| ██████████████████████████████████▌       Epochs completed:  64%| ██████████████████████████████████▊       Epochs completed:  65%| ███████████████████████████████████       Epochs completed:  66%| ███████████████████████████████████▎      Epochs completed:  66%| ███████████████████████████████████▋      Epochs completed:  66%| ███████████████████████████████████▉      Epochs completed:  67%| ████████████████████████████████████▏     Epochs completed:  68%| ████████████████████████████████████▍     Epochs completed:  68%| ████████████████████████████████████▋     Epochs completed:  68%| ████████████████████████████████████▉     Epochs completed:  69%| █████████████████████████████████████▎    Epochs completed:  70%| █████████████████████████████████████▌    Epochs completed:  70%| █████████████████████████████████████▊                 140/200 [00:26]    completed  140  /  200 epochs
+Epochs completed:  70%| ██████████████████████████████████████    Epochs completed:  71%| ██████████████████████████████████████▎   Epochs completed:  72%| ██████████████████████████████████████▌   Epochs completed:  72%| ██████████████████████████████████████▉   Epochs completed:  72%| ███████████████████████████████████████▏  Epochs completed:  73%| ███████████████████████████████████████▍  Epochs completed:  74%| ███████████████████████████████████████▋  Epochs completed:  74%| ███████████████████████████████████████▉  Epochs completed:  74%| ████████████████████████████████████████▏ Epochs completed:  75%| ████████████████████████████████████████▌ Epochs completed:  76%| ████████████████████████████████████████▊ Epochs completed:  76%| █████████████████████████████████████████ Epochs completed:  76%| █████████████████████████████████████████▎Epochs completed:  77%| █████████████████████████████████████████▌Epochs completed:  78%| █████████████████████████████████████████▊Epochs completed:  78%| ██████████████████████████████████████████Epochs completed:  78%| ██████████████████████████████████████████Epochs completed:  79%| ██████████████████████████████████████████Epochs completed:  80%| ██████████████████████████████████████████Epochs completed:  80%| ███████████████████████████████████████████▏           160/200 [00:30]    completed  160  /  200 epochs
+Epochs completed:  80%| ██████████████████████████████████████████Epochs completed:  81%| ██████████████████████████████████████████Epochs completed:  82%| ██████████████████████████████████████████Epochs completed:  82%| ██████████████████████████████████████████Epochs completed:  82%| ██████████████████████████████████████████Epochs completed:  83%| ██████████████████████████████████████████Epochs completed:  84%| ██████████████████████████████████████████Epochs completed:  84%| ██████████████████████████████████████████Epochs completed:  84%| ██████████████████████████████████████████Epochs completed:  85%| ██████████████████████████████████████████Epochs completed:  86%| ██████████████████████████████████████████Epochs completed:  86%| ██████████████████████████████████████████Epochs completed:  86%| ██████████████████████████████████████████Epochs completed:  87%| ██████████████████████████████████████████Epochs completed:  88%| ██████████████████████████████████████████Epochs completed:  88%| ██████████████████████████████████████████Epochs completed:  88%| ██████████████████████████████████████████Epochs completed:  89%| ██████████████████████████████████████████Epochs completed:  90%| ██████████████████████████████████████████Epochs completed:  90%| ████████████████████████████████████████████████▌      180/200 [00:33]    completed  180  /  200 epochs
+Epochs completed:  90%| ██████████████████████████████████████████Epochs completed:  91%| ██████████████████████████████████████████Epochs completed:  92%| ██████████████████████████████████████████Epochs completed:  92%| ██████████████████████████████████████████Epochs completed:  92%| ██████████████████████████████████████████Epochs completed:  93%| ██████████████████████████████████████████Epochs completed:  94%| ██████████████████████████████████████████Epochs completed:  94%| ██████████████████████████████Epochs completed:  98%| ██████████████████████████████████████████Epochs completed:  99%| ██████████████████████████████████████████Epochs completed: 100%| ██████████████████████████████████████████Epochs completed: 100%| ██████████████████████████████████████████Epochs completed: 100%| ██████████████████████████████████████████████████████ 200/200 [00:37]
+Sun Sep 22 15:44:44 2024 Finished embedding
+Визуализация результатов
+Отрисовка всех точек

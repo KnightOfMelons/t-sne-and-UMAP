@@ -7,3 +7,5 @@
 pip install pandas matplotlib scikit-learn
 
 pip install tqdm
+
+pip install umap-learn
